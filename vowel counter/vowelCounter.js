@@ -7,8 +7,8 @@ function validate(word) {
     var vowel_list = 'aeiouAEIOU';
     var vtotal = 0;
 
-    for (var i = 0; i < word.length; i++) {
-        if (vowel_list.indexOf(word[i]) !== -1) {
+    for (let i of word) {
+        if (vowel_list.indexOf(i) !== -1) {
             vtotal++
 
         }
